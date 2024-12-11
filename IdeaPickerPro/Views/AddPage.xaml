@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IdeaPickerPro.Views.AddPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20,20">
+            <ListView x:Name="lstIdeas" ItemSelected="SelectedItem" /> 
+            <StackLayout VerticalOptions="End">
+                <Border Margin="0,50,0,0" Stroke="Gray" StrokeThickness="1">
+                    <Entry x:Name="txtInput" />
+                </Border>
+                
+                <Button x:Name="btnAdd" Text="Add Idea" Margin="0,10,0,0" Clicked="AddIdea" />
+                <Button x:Name="btnDelete" Text="Delete Idea" Margin="0,10,0,0" Clicked="DeleteIdea" IsEnabled="False" />
+            </StackLayout> 
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
